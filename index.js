@@ -68,7 +68,6 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    GAME.appendChild(rock);
-   window.requestAnimationFrame(moveRock);
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -82,6 +81,7 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
+     window.requestAnimationFrame(moveRock);
      if (checkCollision(rock)){
        endGame();
      };
