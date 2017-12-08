@@ -82,7 +82,6 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
-     //window.requestAnimationFrame(moveRock);
      if (checkCollision(rock)){
        endGame();
      };
@@ -98,7 +97,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
   }
-moveRock();
+  moveRock();
   // We should kick of the animation of the rock around here
 
   // Add the rock to ROCKS so that we can remove all rocks
