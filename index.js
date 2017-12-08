@@ -68,14 +68,13 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
    GAME.appendChild(rock);
-   window.requestAnimationFrame(moveRock);
 
   /**
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
   function moveRock() {
-    rock.style.top = `${top + 2}px`;
+    rock.style.top = `${top += 2}px`;
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -85,9 +84,6 @@ function createRock(x) {
      if (checkCollision(rock)){
        endGame();
      };
-     for (let i = 0; i > 10; i++){
-       window.requestAnimationFrame(moveRock);
-     }
 
 
     /**
@@ -100,7 +96,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
   }
-  moveRock();
+  window.requestAnimationFrame(moveRock);
   // We should kick of the animation of the rock around here
 
   // Add the rock to ROCKS so that we can remove all rocks
