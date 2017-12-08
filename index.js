@@ -84,14 +84,13 @@ function createRock(x) {
      window.requestAnimationFrame(moveRock);
      if (checkCollision(rock)){
        endGame();
-     } 
+     };
 
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
-
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
