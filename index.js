@@ -85,7 +85,7 @@ function createRock(x) {
      if (checkCollision(rock)){
        endGame();
      } else if (rock.style.bottom == DODGER.style.bottom){
-       rock.remove();
+       //rock.remove();
      };
 
 
