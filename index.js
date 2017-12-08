@@ -75,8 +75,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    let topPosition = rock.style.top;
-    topPosition = `${top + 2}px`;
+    rock.style.top = `${top + 2}px`;
     // implement me!
     // (use the comments below to guide you!)
     /**
@@ -85,10 +84,10 @@ function createRock(x) {
      */
      if (checkCollision(rock)){
        endGame();
-     }
-     while (positionToInteger(rock.style.bottom) > positionToInteger(GAME.style.bottom)){
-       window.requestAnimationFrame(moveRock);
      };
+     for (let i = 0; i > 10; i++){
+       window.requestAnimationFrame(moveRock);
+     }
 
 
     /**
