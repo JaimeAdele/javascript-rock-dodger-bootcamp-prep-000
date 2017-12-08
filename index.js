@@ -75,7 +75,7 @@ function createRock(x) {
    * seems like a good pace.)
    */
   function moveRock() {
-    const topPosition = rock.style.top;
+    let topPosition = rock.style.top;
     topPosition = `${top + 2}px`;
     // implement me!
     // (use the comments below to guide you!)
